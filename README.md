@@ -303,7 +303,7 @@ That's it, you have successfully deployed and tested the Web microservice locall
 appsody run 
 ```
 
-Connect to the application in your browser: http://localhost:8080
+Connect to the application in your browser: http://localhost:3000
 
 This launches a Docker container that continuously re-builds and re-runs your project. 
 You can continue to edit the application in your preferred IDE (VSCode or other) and your changes will be reflected in the running container within a few seconds.
