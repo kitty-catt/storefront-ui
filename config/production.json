@@ -42,7 +42,7 @@
     },
     "oauth20": {
       "protocol": "http",
-      "service_name": "auth-ms-spring-full-bc.dte-ocp44-9bf7x0-915b3b336cabec458a7c7ec2aa7c625f-0000.us-east.containers.appdomain.cloud",
+      "service_name": "auth-ms-spring:8080",
       "base_path": "/oauth",
       "paths": {
         "authz": "/authorize",
