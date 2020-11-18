@@ -75,8 +75,11 @@ app.service('BlueAPIService',['$http', 'CONFIG', '$base64', function($http, CONF
 			loginUser : function(parameters, successCallback, errorCallback) {
 				console.table(CONFIG["APIs"].oauth20);
 				const protocol=CONFIG["APIs"].oauth20.protocol;
-				const host = CONFIG["APIs"].oauth20.service_name
-				//const host = process.env.AUTH_HOST;
+
+				//Use environment variable AUTH_HOST
+				//const host = CONFIG["APIs"].oauth20.service_name
+				const host = process.env.AUTH_HOST;
+
 				const restUrl=protocol + '://' + host + '/oauth/token'
 				console.log('restURL ' + restUrl);
 				const requestType = 'POST';
@@ -96,8 +99,11 @@ app.service('BlueAPIService',['$http', 'CONFIG', '$base64', function($http, CONF
 				console.table(CONFIG["APIs"].oauth20);
 				console.log('here');
 				const protocol=CONFIG["APIs"].oauth20.protocol;
-				const host = CONFIG["APIs"].oauth20.service_name
-				//const host = process.env.AUTH_HOST;
+
+				//Use environment variable AUTH_HOST				
+				//const host = CONFIG["APIs"].oauth20.service_name
+				const host = process.env.AUTH_HOST;
+				
 				const restUrl=protocol + '://' + host + '/customer'
 				console.log('restURL ' + restUrl);
 
